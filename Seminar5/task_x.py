@@ -12,16 +12,16 @@ code = {1:'osfjwoiergwoignaewpjofwoeijfnwfonewfoignewtowenffnoeiwowjfninoiwfen',
     5:'ntoneeee',
     6:'tonee',
     7:'253235235a5323352n25235352t253523523235oo235523523523n',
-    8:'antoooooooooooooooooooooooooooooooooooooooooooooooooooon',
+    8:'antooooooooooooooooooooooooooooooooooooooootoooooooooooon',
     9:'unton'}
 #1 2 7 8
-virus = 'anton'
+virus = 'antton'
 for k in range(1, len(code) + 1):
     s = code[k]
     res = ''
     for m in virus:
         if m in s:
             res = res + m
-            s = s[s.find(m):]
+            s = s[s.find(m)+1:]
     if res == virus:
         print(k)

@@ -15,7 +15,7 @@ code = {1:'osfjwoiergwoignaewpjofwoeijfnwfonewfoignewtowenffnoeiwowjfninoiwfen',
     8:'antooooooooooooooooooooooooooooooooooooooootoooooooooooon',
     9:'unton'}
 #1 2 7 8
-virus = 'antton'
+virus = 'anton'
 for k in range(1, len(code) + 1):
     s = code[k]
     res = ''

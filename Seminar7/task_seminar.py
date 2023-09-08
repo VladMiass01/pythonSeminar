@@ -40,15 +40,20 @@
 # print(values)
 # print(transormed_values)
 
-def find_farthest_orbit(list_of_orbits):
-    filter_orbit = list(filter(lambda x: x[0] != x[1], list_of_orbits))
-    square_orbit = list(map(lambda x: x[0] * x[1], filter_orbit))
-    dict_orbit = dict(zip(square_orbit, filter_orbit))
-    max_orbit = max(dict_orbit.keys())
-    return dict_orbit.get(max_orbit)
+# def find_farthest_orbit(list_of_orbits):
+#     filter_orbit = list(filter(lambda x: x[0] != x[1], list_of_orbits))
+#     square_orbit = list(map(lambda x: x[0] * x[1], filter_orbit))
+#     dict_orbit = dict(zip(square_orbit, filter_orbit))
+#     max_orbit = max(dict_orbit.keys())
+#     return dict_orbit.get(max_orbit)
 
 
-orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-print(find_farthest_orbit(orbits))
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# print(find_farthest_orbit(orbits))
 
-print(max(orbits, key = lambda x: x[0] * x[1] * (x[0] != x[1])))
+# print(max(orbits, key = lambda x: x[0] * x[1] * (x[0] != x[1])))
+
+lst = list(input().split())
+print(lst)
+lst_1 = list(filter(lambda x: len(str(abs(int(x)))) == 2, lst))
+print(lst_1)

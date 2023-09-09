@@ -53,7 +53,17 @@
 
 # print(max(orbits, key = lambda x: x[0] * x[1] * (x[0] != x[1])))
 
-lst = list(input().split())
-print(lst)
-lst_1 = list(filter(lambda x: len(str(abs(int(x)))) == 2, lst))
-print(lst_1)
+# lst = list(input().split())
+# print(lst)
+# lst_1 = list(filter(lambda x: len(str(abs(int(x)))) == 2, lst))
+# print(lst_1)
+
+sum1 = 0
+sum2 = 0
+temp = lambda x: x * x * (x % 9 == 0)
+for i in range(10, 100):
+    sum1 = sum1 + temp(i)
+    if i % 9 == 0:
+        sum2 = sum2 + i * i
+
+print(sum1, "  ", sum2)

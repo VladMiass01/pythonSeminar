@@ -17,6 +17,7 @@ def func(poem):
             if i in 'аеиоуыэюя':
                 sum_w += 1
         lst.append(sum_w)
+#        print(len(lst), lst.count(lst[0]), lst)
     return len(lst) == lst.count(lst[0])
 
 

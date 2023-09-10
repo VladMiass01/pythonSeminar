@@ -8,3 +8,20 @@
 # в порядке
 # Ввод:                                   Вывод:
 # пара-ра-рам рам-пам-папам па-ра-па-дам  Парам пам-пам
+def func(poem):
+    poem = poem.split()
+    lst = []
+    for word in poem:
+        sum_w = 0
+        for i in word:
+            if i in 'аеиоуыэюя':
+                sum_w += 1
+        lst.append(sum_w)
+    return len(lst) == lst.count(lst[0])
+
+
+poem_in = 'пара-ра-рам рам-пам-папам па-ра-па-дам'
+if func(poem_in):
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
